@@ -158,7 +158,7 @@ class Workspace(private val name: String, private val description: String) {
             addElementStyle(Tags.COMPONENT).shape(Shape.RoundedBox)
             addElementStyle(Container.Type.Service.name).shape(Shape.Hexagon)
             addElementStyle(Container.Type.Storage.name).shape(Shape.Cylinder)
-            addElementStyle(Container.Type.Queue.name).shape(Shape.Pipe)
+            addElementStyle(Container.Type.Queue.name).shape(Shape.Pipe).width(1200).height(200)
         }
 
         WorkspaceUtils.saveWorkspaceToJson(workspace, File("doc/architecture.json"))
