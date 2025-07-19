@@ -111,7 +111,7 @@ class Workspace(private val name: String, private val description: String) {
                 enableAutomaticLayout(direction)
             }
             if (system.hasContainers()) {
-                views.createContainerView(system, "${system.name} Containers", system.description).run {
+                views.createContainerView(system, "${system.name}-Containers", system.description).run {
                     addDefaultElements()
                     val synthetic = getElements()
                         .map { it.element }
